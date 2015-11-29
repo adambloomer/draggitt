@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pages/drag-and-drop-single.css">
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<h1>Drag and drop - single</h1>
+		<div id="drag-container">
+			<div id="drag1" class="dragItem draggable" data-answer="0"><p>Question 1</p></div>
+			<div id="drag2" class="dragItem draggable" data-answer="zone1"><p>Question 2</p></div>
+			<div id="drag3" class="dragItem draggable" data-answer="0"><p>Question 3</p></div>
+			<div id="zone1" class="dropzone active" data-snap="50"><p>Drop chosen answer here</p><span></span></div>
+			<input type="submit" class="drag-submit" disabled/>
+			<input type="submit" value="reveal" class="drag-reveal hide" />
+		</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="../draggitt.js"></script>
+    </body>
+</html>
+
